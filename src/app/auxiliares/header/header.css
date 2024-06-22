@@ -5,11 +5,16 @@
 
 header{
   max-width: 100%;
-  background-color: #FFAB02;
+  background-color: transparent;
   display: flex;
-  justify-content: space-between;
-  height: 25vh;
+  justify-content:center;
+  height: 22vh;
   color: black;
   align-items: center;
+}
+img{
+  width: 80%;
+  height: auto;
+  margin: auto;
 }
 

@@ -1,0 +1,82 @@
+.contenedor{
+  background-image: url("/assets/background/fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-width: 100%;
+}
+.pregunta{
+  max-width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.contenido {
+  max-width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenido .azul {
+  margin: 2.5%;
+  width: 12%;
+  height: 65%;
+  background-color: #013C72;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Para que los elementos hijos con position absolute se posicionen respecto a .azul */
+}
+
+.contenido .azul .logoTexto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+}
+.contenido .azul .logoTexto .logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.contenido .azul .logoTexto .nombre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.contenido .azul .logo img {
+  width: 35%;
+  height: auto;
+}
+
+.contenido .azul .imagen {
+  width: 98%;
+  height: 100%;
+  position: absolute; /* Posiciona la imagen de manera absoluta */
+  z-index: 1; /* Asegura que la imagen esté debajo del logo */
+}
+
+.contenido .azul .imagen img {
+  width: 100%;
+  height: 100%;
+}
+
