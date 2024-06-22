@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  max-width: 100%;
+  background-color: #FFAB02;
+  display: flex;
+  justify-content: space-between;
+  height: 25vh;
+  color: black;
+  align-items: center;
+}
+
