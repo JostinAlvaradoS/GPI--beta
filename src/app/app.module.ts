@@ -6,10 +6,11 @@ import {HeaderComponent} from "./auxiliares/header/header";
 import {FooterComponent} from "./auxiliares/footer/footer";
 import {SidebarComponent} from "./auxiliares/sidebar/sidebar";
 import {HomeComponent} from "./componentes/home/home";
+import {GadComponent} from "./componentes/gad/gad";
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, FooterComponent, SidebarComponent, HomeComponent
+    AppComponent, HeaderComponent, FooterComponent, SidebarComponent, HomeComponent, GadComponent
   ],
   imports: [
     BrowserModule,

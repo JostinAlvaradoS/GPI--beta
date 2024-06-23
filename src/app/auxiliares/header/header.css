@@ -12,8 +12,11 @@ header{
   color: black;
   align-items: center;
 }
+.central {
+  width: 28%;
+}
 img{
-  width: 80%;
+  width: 100%;
   height: auto;
   margin: auto;
 }

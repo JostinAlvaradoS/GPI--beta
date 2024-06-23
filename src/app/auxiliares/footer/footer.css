@@ -11,9 +11,12 @@ footer{
   color: black;
   align-items: center;
 }
+.izquierda{
+  width: 8%;
+  margin-left: 1%;
+}
 img{
-  width: 50%;
+  width: 100%;
   height: auto;
-  margin-left: 5%;
 }
 
