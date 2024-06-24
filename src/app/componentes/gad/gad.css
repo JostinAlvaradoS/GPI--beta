@@ -96,3 +96,16 @@
   font-weight: 600;
   font-size: 1.05vw;
 }
+
+.azul {
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.azul:hover {
+  transform: scale(1.125);
+}
+
+.azul:active {
+  transform: scale(0.8);
+}

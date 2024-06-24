@@ -7,17 +7,57 @@ header{
   max-width: 100%;
   background-color: transparent;
   display: flex;
-  justify-content:center;
   height: 22vh;
   color: black;
   align-items: center;
 }
 .central {
   width: 28%;
+  margin: auto;
 }
-img{
+.central img{
+  width: 100%;
+  height: auto;
+}
+.izquierda{
+  width: 9%;
+  height: 29%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.izquierda .azulOscuro{
+  width: 35%;
+  height: 80%;
+  background-color: #022A4D;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.izquierda .descarga{
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.izquierda .descarga .texto{
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.6vw;
+}
+.descarga img{
+  width: auto;
+  height: 100%;
+}
+.derecha{
+  width: 8%;
+  height: 20%;
+  margin-right: 3%;
+}
+.derecha img{
   width: 100%;
   height: auto;
   margin: auto;
 }
-

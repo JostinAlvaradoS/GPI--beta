@@ -1,5 +1,28 @@
 <header>
+    <section class="izquierda">
+      <div class="azulOscuro">
+      </div>
+      <ng-container *ngIf="path === '/home'">
+      <div class="descarga">
+        <img src="assets/icons/descarga.svg" alt="gpi">
+      </div>
+      </ng-container>
+      <ng-container *ngIf="path != '/home'">
+      <div class="descarga">
+        <div class="texto">
+        {{currentPath}}
+        </div>
+      </div>
+      </ng-container>
+    </section>
+
     <section class="central">
       <img src="assets/icons/Gpi.svg" alt="gpi">
+    </section>
+
+    <section class="derecha">
+      <div class="ingresar">
+      <img src="assets/icons/login.svg" alt="gpi">
+      </div>
     </section>
 </header>

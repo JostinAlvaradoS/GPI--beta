@@ -1,0 +1,103 @@
+.contenedor{
+  background-image: url("/assets/background/fondo2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-width: 100%;
+}
+.contenido{
+ width: 100%;
+  height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.azulOscuro{
+  width: 50%;
+  height: 70%;
+  background-color: #022A4D;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.azulOscuro .header{
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.azulOscuro .header .imagen{
+  width: 40%;
+  margin: auto;
+}
+.azulOscuro .header .imagen img{
+  width: 100%;
+  height: auto;
+}
+.azulOscuro .header .cerrar{
+  width: 5%;
+  height: 5%;
+  margin: 1.3%;
+}
+.azulOscuro .header .cerrar img{
+  width: 100%;
+  height: auto;
+}
+
+.azulOscuro .data{
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.data .usuarioClave{
+  width: 40%;
+  height: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+}
+.data .usuarioClave .icono{
+  width: 10%;
+}
+.data .usuarioClave .icono img{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.data .usuarioClave input{
+  width: 70%;
+  height: 100%;
+  background-color: #4B82B8;
+  border: none;
+  border-radius: 25px;
+  margin: 5%;
+}
+.data .usuarioClave input::placeholder{
+  color: white;
+  text-align: center;
+  font-weight: 200;
+}
+.footer{
+  height: 10%;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .texto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2%;
+  font-weight: 200;
+  text-decoration: underline 1px;
+  cursor: pointer;
+}
