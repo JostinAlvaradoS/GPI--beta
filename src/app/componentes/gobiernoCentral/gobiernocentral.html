@@ -1,0 +1,35 @@
+<div class="contenedor">
+  <app-header></app-header>
+  <div class="pregunta">
+    <div class="bienvenido">
+      Bienvenido
+    </div>
+    <div class="texto">
+      ¿Qué proceso deseas hacer hoy?
+    </div>
+  </div>
+  <div class="contenido">
+
+    <div *ngFor="let icon of svgIcons; let i = index" class="azul">
+      <div class="izquierda">
+        <div class="azulOscuro">
+          <div class="logo">
+            <img [src]="icon" alt="icon {{ i }}">
+          </div>
+        </div>
+      </div>
+      <div class="derecha">
+        <div class="nombre">
+          <div class="textopequeno">{{ textosPequenos[i] }}</div>
+          <div class="textogrande">{{ textosGrandes[i] }}</div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <app-footer></app-footer>
+</div>
+
+
+

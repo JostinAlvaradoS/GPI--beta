@@ -1,41 +1,42 @@
 <div class="contenedor">
   <div class="contenido">
-<div class="azulOscuro">
-<div class="header">
-  <div class="cerrar">
-    <img src="assets/icons/x-circle.svg" alt="x">
-  </div>
-<div class="imagen">
-  <img src="assets/icons/Gpi.svg" alt="gpi">
-</div>
-</div>
-
-  <div class="data">
-<div class="usuarioClave">
-<div class="icono">
-<img src="assets/icons/user.svg" alt="user">
-</div>
-  <input placeholder="Usuario" class="recuadro">
-</div>
-
-    <div class="usuarioClave">
-      <div class="icono">
-        <img src="assets/icons/key.svg" alt="user">
+    <div class="azulOscuro">
+      <div class="header">
+        <div class="cerrar">
+          <img src="assets/icons/x-circle.svg" alt="x">
+        </div>
+        <div class="imagen">
+          <img src="assets/icons/Gpi.svg" alt="gpi">
+        </div>
       </div>
-      <input placeholder="Contraseña" class="recuadro">
+
+      <div class="data">
+
+        <div class="usuarioClave">
+          <div class="icono">
+            <img src="assets/icons/user.svg" alt="user">
+          </div>
+          <input [(ngModel)]="username" placeholder="Usuario" class="recuadro">
+        </div>
+
+        <div class="usuarioClave">
+          <div class="icono">
+            <img src="assets/icons/key.svg" alt="user">
+          </div>
+          <input [(ngModel)]="password" type="password" placeholder="Contraseña" class="recuadro">
+        </div>
+
+        <div class="login" (click)="login()">
+          Iniciar sesión
+        </div>
+
+      </div>
+
+      <div class="footer">
+        <div class="texto"> Olvidaste tu contraseña </div>
+        <div class="texto"> Regístrate </div>
+      </div>
     </div>
-
-  </div>
-
-  <div class="footer">
-<div class="texto"> Olvidaste tu contraseña </div>
-    <div class="texto"> Regístrate </div>
-  </div>
-</div>
-
   </div>
   <app-footer></app-footer>
 </div>
-
-
-

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-bomberos',
   templateUrl: './bomberos.html',
-  styleUrls: ['./bomberos.css']
+  styleUrls: ['../gad/gad.css']
 })
 export class BomberosComponent {
   svgIcons = [

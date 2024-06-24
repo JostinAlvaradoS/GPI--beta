@@ -1,5 +1,5 @@
 .contenedor{
-  background-image: url("/assets/background/fondo2.png");
+  background-image: url("/assets/background/fondo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,11 +76,13 @@
   border: none;
   border-radius: 25px;
   margin: 5%;
+  color: white;
 }
 .data .usuarioClave input::placeholder{
-  color: white;
+  color: rgba(255, 255, 255, 0.25);
   text-align: center;
   font-weight: 200;
+  font-size: 1.1vw;
 }
 .footer{
   height: 10%;
@@ -100,4 +102,25 @@
   font-weight: 200;
   text-decoration: underline 1px;
   cursor: pointer;
+  font-size: 1.1vw;
+}
+.login{
+  width: 18%;
+  height: 10%;
+  background-color: #FFA80D;
+  color: black;
+  font-size: 1vw;
+  word-break: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin: 5%;
+  cursor: pointer;
+}
+.login:hover{
+  background-color: #bd7902;
+}
+.login:active{
+  background-color: #FFA80D;
 }
