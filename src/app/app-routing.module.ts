@@ -9,7 +9,7 @@ import {EmpresaspublicasComponent} from "./componentes/empresasPublicas/empresas
 import {GobiernoCentralComponent} from "./componentes/gobiernoCentral/gobiernocentral";
 
 const routes: Routes = [
-  {path:'login', component: LoginComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path:'home', component: HomeComponent},
   {path:'GADS', component: GadComponent},
   {path:'bomberos', component: BomberosComponent},

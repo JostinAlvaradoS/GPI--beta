@@ -8,16 +8,10 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
 
-  username: string = '';
-  password: string = '';
 
   constructor(private router: Router) {}
 
   login() {
-    if (this.username === 'testing' && this.password === 'testing') {
       this.router.navigate(['/home']);
-    } else {
-      alert('Verifique su usuario y contraseña');
     }
-  }
 }

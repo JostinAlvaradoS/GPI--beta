@@ -12,26 +12,39 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        this.currentPath = this.transformPath(event.url);
         this.path = event.url;
       }
     });
   }
 
   ngOnInit() {
-    this.currentPath = this.transformPath(this.router.url);
-    console.log(this.currentPath);
+    this.currentPath = this.router.url;
+    this.verificarpath();
   }
 
-  private transformPath(url: string): string {
-    // Remover el primer '/' y formatear el texto
-    let path = url.startsWith('/') ? url.substring(1) : url;
-    path = path.split('/')[0]; // Opcional: si quieres solo la primera parte de la ruta
-    return this.formatPath(path);
+  verificarpath(){
+    switch (this.currentPath) {
+      case "/GADS":
+        this.currentPath = "GADS";
+        break;
+      case "/bomberos":
+        this.currentPath = "Bomberos";
+        break;
+      case "/registrosDeLaPropiedad":
+        this.currentPath = "Registros de la Propiedad";
+        break;
+      case "/empresasPublicas":
+        this.currentPath = "Empresas Públicas";
+        break;
+      case "/gobiernoCentral":
+        this.currentPath = "Gobierno Central";
+        break;
+      case "/home":
+
+        break;
+      default:
+        break;
+    }
   }
 
-  private formatPath(path: string): string {
-    // Insertar espacios antes de letras mayúsculas y capitalizar
-    return path.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase()).trim();
-  }
 }

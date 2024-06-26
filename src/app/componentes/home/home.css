@@ -50,41 +50,74 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   position: relative; /* Para que los elementos hijos con position absolute se posicionen respecto a .azul */
 }
 
 .contenido .azul .logoTexto {
   width: 100%;
-  display: flex;
+  height: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: absolute;
   z-index: 2;
+  display: grid;
+  grid-template-rows: 50% 0.5% 49.5%;
+  grid-template-areas:
+    "logo"
+    "amarillo"
+    "texto";
 }
 .contenido .azul .logoTexto .logo {
   width: 100%;
+  margin-top: 25%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 10px;
+  grid-area: logo;
 }
 .contenido .azul .logoTexto .nombre {
   width: 80%;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 10%;
   color: white;
+  justify-content: center;
   font-weight: 600;
-  font-size: 1.7vw;
+  font-size: 1.6vw;
   white-space: normal;
   word-wrap: break-word;
   text-align: center;
+  grid-area: texto;
+  position: absolute;
+}
+.contenido .azul .logoTexto .nombreGad {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  margin: 10%;
+  color: white;
+
+  font-weight: 600;
+  font-size: 1.6vw;
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: center;
+  grid-area: texto;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+}
+
+.amarillo{
+  width: 90%;
+  position: absolute;
+  height: 0.5%;
+  background-color: #FFA80D;
+  margin-left: 5%;
 }
 
 .contenido .azul .logo img {
-  width: 35%;
+  width: 6vw;
   height: auto;
 }
 
@@ -112,4 +145,18 @@
 
 .azul:active {
   transform: scale(0.8);
+}
+.textopequeno{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8vw;
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: center;
+  margin-top: 8%;
+
 }

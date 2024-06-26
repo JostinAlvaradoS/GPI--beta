@@ -11,7 +11,7 @@ export class GadComponent {
     'assets/submenuIcons/controlejecutivo.svg',
     'assets/submenuIcons/gestionadministrativa.svg',
     'assets/submenuIcons/gestiondocumentalenlinea.svg',
-    'assets/submenuIcons/gestionyplanificacion.svg',
+    'assets/submenuIcons/gestiondeplanificacion.svg',
     'assets/submenuIcons/gestionfinanciera.svg',
     'assets/submenuIcons/gestionjuridica.svg',
     'assets/submenuIcons/gestionuath.svg',

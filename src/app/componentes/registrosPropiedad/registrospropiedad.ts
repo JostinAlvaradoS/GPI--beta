@@ -9,42 +9,39 @@ export class RegistrosPropiedadComponent {
   svgIcons = [
     'assets/submenuIcons/compraspublicas.svg',
     'assets/submenuIcons/controlejecutivo.svg',
+    'assets/submenuIcons/escuelaregistral.svg',
     'assets/submenuIcons/gestionadministrativa.svg',
     'assets/submenuIcons/gestiondocumentalenlinea.svg',
-    'assets/submenuIcons/gestionyplanificacion.svg',
+    'assets/submenuIcons/gestiondeplanificacion.svg',
     'assets/submenuIcons/gestionfinanciera.svg',
     'assets/submenuIcons/gestionjuridica.svg',
     'assets/submenuIcons/gestionuath.svg',
     'assets/submenuIcons/balcondeservicios.svg',
-    'assets/submenuIcons/gestiontributariamunicipal.svg',
-    'assets/submenuIcons/gestionterritorial.svg',
-    'assets/submenuIcons/gestiondeproyectos.svg',
-    'assets/submenuIcons/gestiondeaguapotable.svg',
-    'assets/submenuIcons/gestionterritorialycatastros.svg',
+    'assets/submenuIcons/sistemaregistral.svg',
     'assets/submenuIcons/seguridadyparametrizacion.svg'
   ];
+
+
 
   textosPequenos = [
     'Compras',
     'Control',
+    'Escuela',
     'Gestión',
-    'Gestión documental',
+    'Gestión Documental',
     'Gestión de',
     'Gestión',
     'Gestión',
     'Gestión',
     'Balcón de',
-    'Gestión tributaria',
-    'Gestión',
-    'Gestión de',
-    'Gestión de',
-    'Gestión Territorial y',
+    'Sistema',
     'Seguridad y'
   ];
 
   textosGrandes = [
     'Públicas',
     'Ejecutivo',
+    'Registral',
     'Administrativa',
     'en línea',
     'Planificación',
@@ -52,11 +49,7 @@ export class RegistrosPropiedadComponent {
     'Jurídica',
     'UATH',
     'Servicios',
-    'Municipal',
-    'Territorial',
-    'Proyectos',
-    'Agua Potable',
-    'Catastros',
+    'Registral',
     'Parametrización'
   ];
 }
