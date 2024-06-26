@@ -14,7 +14,7 @@ export class HomeComponent{
   ngOnInit(): void {
     setTimeout(() => {
       this.showGif = false;
-    }, 3000);
+    }, 2550);
   }
   redirectToGads() {
     this.router.navigate(['/GADS']);
