@@ -1,3 +1,24 @@
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(45, 45, 45, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.loading-overlay img {
+  max-width: 40%;
+  max-height: 40%;
+}
+
+
 .contenedor{
   background-image: url("/assets/background/fondo2.png");
   background-size: cover;
@@ -50,9 +71,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative; /* Para que los elementos hijos con position absolute se posicionen respecto a .azul */
+  position: relative;
+  box-shadow: 12px 12px 17px rgba(0, 0, 0, 0.35); /* Sombra a la derecha y abajo */
 }
-
 .contenido .azul .logoTexto {
   width: 100%;
   height: 100%;
@@ -70,7 +91,7 @@
 }
 .contenido .azul .logoTexto .logo {
   width: 100%;
-  margin-top: 25%;
+  margin-top: 80%;
   display: flex;
   justify-content: center;
   grid-area: logo;
@@ -79,11 +100,12 @@
   width: 80%;
   height: 100%;
   display: flex;
-  margin: 10%;
+  margin-top: 25%;
+  margin-left: 10%;
   color: white;
   justify-content: center;
   font-weight: 600;
-  font-size: 1.6vw;
+  font-size: 1.4vw;
   white-space: normal;
   word-wrap: break-word;
   text-align: center;
@@ -94,9 +116,9 @@
   width: 80%;
   height: 100%;
   display: flex;
-  margin: 10%;
+  margin-top: 25%;
+  margin-left: 10%;
   color: white;
-
   font-weight: 600;
   font-size: 1.6vw;
   white-space: normal;
@@ -117,7 +139,7 @@
 }
 
 .contenido .azul .logo img {
-  width: 6vw;
+  width: 4.75vw;
   height: auto;
 }
 
@@ -158,5 +180,4 @@
   word-wrap: break-word;
   text-align: center;
   margin-top: 8%;
-
 }

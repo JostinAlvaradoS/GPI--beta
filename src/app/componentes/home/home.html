@@ -1,4 +1,7 @@
 <div class="contenedor">
+  <div *ngIf="showGif" class="loading-overlay">
+    <img src="assets/imagesSpecial/loading.gif" alt="Loading">
+  </div>
   <app-header></app-header>
   <div class="pregunta">
     <div class="bienvenido">

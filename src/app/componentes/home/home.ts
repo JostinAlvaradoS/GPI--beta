@@ -6,10 +6,16 @@ import { Router } from '@angular/router';
   templateUrl: './home.html',
   styleUrls: ['./home.css']
 })
-export class HomeComponent {
+export class HomeComponent{
+  showGif: boolean = true;
 
   constructor(private router: Router) {}
 
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.showGif = false;
+    }, 3000);
+  }
   redirectToGads() {
     this.router.navigate(['/GADS']);
   }
